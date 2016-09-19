@@ -9,11 +9,11 @@ set FlagKonfig=%CatalogExchange%FlagKonfig.tmp
 echo %DATE% %TIME% -- Запуск cmd >> %loglist%
 if not exist %FlagKonfig% (
 	
-	echo . > %FlagKonfig%
+	
 	echo %DATE% %TIME% -- Начало выполнения обмена >> %loglist%
 	%StartExchange%
 	echo %DATE% %TIME% -- Завершение обмена >> %loglist%
-	del %FlagKonfig%
+	
 
 ) else (
 
